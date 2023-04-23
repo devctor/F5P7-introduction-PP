@@ -19,10 +19,15 @@ First solo project. Getting to know HTML and CSS
 
 - Introduce yourself using code, we will need a photo, title and a paragraph
 
+### Links
+
+- Live Site URL: [Live site](https://devctor.github.io/F5P7-introduction-PP/)
+
 ## My process
-    Simple development environment usin:
-        - VSCode
-        - Live-server vscode plugin
+
+Simple development environment usin:
+    - VSCode
+    - Live-server vscode plugin
 
 ### Built with
 
@@ -33,7 +38,7 @@ First solo project. Getting to know HTML and CSS
 
 ### What I learned
 
-With this particular i learn to set a minimal development environment use semantic HTML and CSS.
+With this particular project i learn to set a minimal development environment and to use semantic HTML and CSS.
 
 ### TODO
 - Use [Playwright](https://playwright.dev/) - For reliable end-to-end testing
