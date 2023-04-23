@@ -8,11 +8,21 @@
 
   /* Sizing */
   --md: 2rem;
+  --sm: 1rem;
+  --circle: 80px;
 
   /* Radius */
   --rounded: 10px;
+
+
+  --mt: var(--sm);
 }
 /* Reset */
+
+* + * { 
+  margin-top: 0;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -52,7 +62,6 @@ img {
   overflow: hidden;
   background: var(--gray);
   margin: 0 var(--md);
-  min-width: 320px;
   max-width: 470px;
   padding: 0 var(--md);
   border-radius: var(--rounded);
@@ -67,7 +76,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: var(--rounded);
-  margin-top: 40px;
+  margin-top: calc(var(--circle) / 2 + var(--mt));
   z-index: 1;
 }
 
@@ -76,23 +85,31 @@ img {
   z-index: 3;
 }
 .user-photo {
-  width: 80px;
-  height: 80px;
+  width: var(--circle);
+  height: var(--circle);
   border-radius: 50%;
   border: 4px solid var(--dark);
   overflow: hidden;
+  margin-top: var(--mt);
 }
 
 .user-info {
   background: var(--darker);
   border-radius: var(--rounded);
-  padding: 0 var(--md);
-  margin-bottom: var(--md);
+  padding: var(--sm);
+  margin-block: var(--sm);
 }
 .user-info h1{
-font-family: 'Jost', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-weight: 700;
   color: var(--light);
   border-bottom: 1px solid var(--ligth);
+  margin-block-end: var(--sm);
+  padding-block-end: var(--sm);
+}
+
+.dob {
+  display: block;
+  margin-bottom: var(--sm);
 }
 
